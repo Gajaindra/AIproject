@@ -17,7 +17,7 @@ def extract_text_from_pdf(file):
     for page in doc:
         text += page.get_text()
     return text
-
+    
 def create_qa_chain_from_text(text):
     splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     docs = splitter.create_documents([text])
