@@ -6,4 +6,4 @@ services:
     startCommand: gunicorn app:app
     envVars:
       - key: GROQ_API_KEY
-        value: "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" # You can leave this out and set via Render dashboard instead
+        sync: false  # You set this manually in the Render dashboard
