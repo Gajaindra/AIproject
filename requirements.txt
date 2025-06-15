@@ -1,12 +1,8 @@
 flask
-faiss-cpu
-sentence-transformers
 gunicorn
-groq
 pymupdf
 langchain
-langchain-community      
-langchain-huggingface      
+langchain-community
 langchain-groq
-scikit-learn
-transformers
+sentence-transformers
+faiss-cpu
