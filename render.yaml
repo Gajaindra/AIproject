@@ -1,8 +1,9 @@
 services:
   - type: web
-    name: SimpleAiproject
+    name: pdf-qa-app
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    plan: free                  
-    region: oregon              
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GROQ_API_KEY
+        value: "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" # You can leave this out and set via Render dashboard instead
